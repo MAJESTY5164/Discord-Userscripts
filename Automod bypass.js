@@ -1,3 +1,4 @@
+    window.AutoModButton = function() {
 // Select the button container
 const buttonContainer = document.querySelector('.buttonContainer_df39bd');
 
@@ -14,20 +15,20 @@ if (buttonContainer) {
     newButton.style.display = 'flex';
     newButton.style.alignItems = 'center';
     newButton.style.justifyContent = 'center';
-    
+
     // Create the letter "B" as the icon
     const letterB = document.createElement('span');
     letterB.textContent = 'B';
     letterB.style.fontSize = '20px';
     letterB.style.fontWeight = 'bold';
-    
+
     // Append the letter "B" to the button
     newButton.appendChild(letterB);
-    
+
     // Append the button to the container
     buttonContainer.innerHTML = '';
     buttonContainer.appendChild(newButton);
-    
+
     // Create modal overlay for the popup (Dark Mode)
     const modalOverlay = document.createElement('div');
     modalOverlay.style.position = 'fixed';
@@ -65,7 +66,7 @@ if (buttonContainer) {
     messageInput.style.resize = 'none';  // Disable resizing
     messageInput.style.marginBottom = '15px';  // Space between text box and buttons
     messageInput.style.textAlign = 'center';
-    messageInput.style.display = 'flex'; messageInput.style.justifyContent = 'center';  
+    messageInput.style.display = 'flex'; messageInput.style.justifyContent = 'center';
     messageInput.style.alignItems = 'center'; // Center text vertically
 
     // Create a Copy button
@@ -129,9 +130,4 @@ copyButton.addEventListener('click', () => {
     // Remove the temporary input
     document.body.removeChild(tempInput);
 });
-
-
-}
-
-
-
+}}
