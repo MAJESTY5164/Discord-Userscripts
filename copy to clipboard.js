@@ -50,4 +50,4 @@
 
     // Example usage (you can replace this with any text you'd like to copy)
     // window.copy('This is the text you want to copy!');  // Single line of text
-// })();
+})();
