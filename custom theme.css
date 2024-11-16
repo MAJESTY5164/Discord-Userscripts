@@ -1,40 +1,3 @@
-// ==UserScript==
-// @name Discord AMOLED Dark Theme
-// @version 2.1.3
-// @author JustTheo
-// @namespace http://tampermonkey.net/
-// @run-at document-start
-// @include https://discord.com/*
-// @description Dark Theme
-// @license MIT
-// ==/UserScript==
-
-window.test = function() {
-    console.log("loading theme")
-    
-    window.loadthemetest()
-}
- 
- window.loadthemetest = function() {
-(function() {
-let css = `
-
-.theme-dark {
-    --background-dark-primary: Blue;
-    --background-dark-secondary: Green;
-    --background-dark-tertiary: Red;
-    --background-dark-4th: Yellow;
- 
-    --greyaccentcolor: 51, 51, 51;
-    --bg-1: var(--background-dark-primary); /* Black */
-    --bg-2: var(--background-dark-tertiary); /* Darker */
-    --bg-3: var(--background-dark-secondary) ; /* Dark */
-    --bg-4: var(--background-dark-4th); /* Dark-Grey */
-    --xl-bg: var(--xenolib-background-color, #000);
-    
-    --theme-name: "AMOLED Dark Theme Optimized";
-}
- 
 MAP
     1. Imports
     2. Vars
@@ -689,5 +652,3 @@ if (typeof GM_addStyle !== "undefined") {
   styleNode.appendChild(document.createTextNode(css));
   (document.querySelector("head") || document.documentElement).appendChild(styleNode);
 }
-})();
- }
