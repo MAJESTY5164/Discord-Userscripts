@@ -16,7 +16,7 @@ window.prompt = function(message, defaultValue = "") {
         // Create the modal content container
         const modalContent = document.createElement('div');
         modalContent.style.backgroundColor = '#2f3136';
-        modalContent.style.padding = '20px';
+        modalContent.style.padding = '0px';
         modalContent.style.borderRadius = '8px';
         modalContent.style.minWidth = '300px';
         modalContent.style.textAlign = 'center';
