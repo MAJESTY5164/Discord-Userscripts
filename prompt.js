@@ -33,7 +33,7 @@ window.prompt = function(message, defaultValue = "") {
         input.type = 'text';
         input.value = defaultValue;
         input.style.width = '100%';
-        input.style.padding = '10px';
+        input.style.padding = '0px';
         input.style.marginBottom = '15px';
         input.style.border = '1px solid #444';
         input.style.borderRadius = '4px';
